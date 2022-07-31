@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'car-sell';
+  paragraphId=0;
+  onClickButton(): void
+  {
+    console.log('hello wolrd!!!');
+  }
 }
