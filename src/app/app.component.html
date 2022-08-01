@@ -1,9 +1,29 @@
-<!--
+
 <app-header></app-header>
+<router-outlet></router-outlet>
 
 
+<!--
 <h1 class="text-primary display-1"> hHello world</h1>
 
 <p [attr.test="'value'"]>hello world </p>
--->
+
+
+<input type="text" name="text" class="form-control"  placeholder="ecrivez ici" [(ngModel)]="text">
+
 <button class=" btn btn-primary" type="button" (click)="onClickButton()">clique ici</button>
+<div *ngIf="displayText">
+    <h1> TU me vois</h1>
+    <p>{{ text }}</p>
+</div>
+
+<li *ngFor="let car of cars">
+
+    <li>
+
+<ul>
+    <li *ngFor=" let car of cars">
+        <p> {{car.brand}} {{car.model}} {{car.color}}</p>
+    </li>
+</ul>
+-->
